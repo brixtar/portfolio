@@ -1,0 +1,12 @@
+# Dependencias y temporales
+.DS_Store
+Thumbs.db
+*.log
+
+# Editores y entornos
+.vscode/
+.idea/
+.qodo/
+
+# Temporales de compilación o scratch
+scratch/
