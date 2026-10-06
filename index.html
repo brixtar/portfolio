@@ -51,8 +51,8 @@
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
         </a>
         <button id="lang-switch" class="lang-switch" title="Cambiar idioma">EN</button>
-        <a href="https://wa.me/5493826449578" target="_blank" rel="noopener noreferrer" class="btn-header-cta" data-i18n="btnWhatsapp">
-          <span>WhatsApp</span>
+        <a href="https://wa.me/5493826449578" target="_blank" rel="noopener noreferrer" class="btn-header-cta">
+          <span data-i18n="btnWhatsappNav">WhatsApp</span>
           <span>→</span>
         </a>
         <button class="hamburger-btn" aria-label="Abrir menú">
@@ -77,7 +77,7 @@
           </div>
 
           <h1 class="hero-title">
-            Hola, soy <br>
+            <span data-i18n="heroGreeting">Hola, soy</span> <br>
             <span class="gradient-text">Leonardo Miguel Brizuela</span>
           </h1>
 
@@ -99,7 +99,7 @@
             <a href="assets/docs/CV_Leonardo_Brizuela.pdf" class="btn-secondary" download="CV_Leonardo_Brizuela.pdf" data-i18n="btnCv">
               <span>📄 Descargar CV</span>
             </a>
-            <a href="https://wa.me/5493826449578" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
+            <a href="https://wa.me/5493826449578" target="_blank" rel="noopener noreferrer" class="btn-whatsapp" data-i18n="btnWhatsappHero">
               <span>💬 Hablar por WhatsApp</span>
             </a>
           </div>
@@ -116,7 +116,7 @@
             </div>
             <div class="stat-item">
               <div class="stat-number">50<span>+</span></div>
-              <div class="stat-label" data-i18n="statHardware">Equipos Mantenidos</div>
+              <div class="stat-label" data-i18n="statHardware">Computadoras y Equipos Mantenidos</div>
             </div>
             <div class="stat-item">
               <div class="stat-number">100<span>%</span></div>
@@ -144,11 +144,11 @@
               <div class="visual-meta">
                 <div>
                   <h4 class="meta-title">Leonardo M. Brizuela</h4>
-                  <p class="meta-subtitle">Analista de Sistemas | UNLaR</p>
+                  <p class="meta-subtitle" data-i18n="metaRole">Analista de Sistemas | UNLaR</p>
                 </div>
                 <div class="tech-pill-container">
-                  <span class="tech-tag-mini">Forense</span>
-                  <span class="tech-tag-mini">Real-Time</span>
+                  <span class="tech-tag-mini" data-i18n="tagForensic">Forense</span>
+                  <span class="tech-tag-mini" data-i18n="tagRealtime">Tiempo Real</span>
                 </div>
               </div>
             </div>
@@ -163,9 +163,9 @@
     <section id="sobre-mi" class="about-section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">FILOSOFÍA &amp; CAPACIDADES</span>
-          <h2 class="section-title">Más que código: Criterio, Hardware y Personas</h2>
-          <p class="section-subtitle">
+          <span class="section-tag" data-i18n="aboutTag">FILOSOFÍA &amp; CAPACIDADES</span>
+          <h2 class="section-title" data-i18n="aboutTitle">Más que código: Criterio, Hardware y Personas</h2>
+          <p class="section-subtitle" data-i18n="aboutSubtitle">
             Un sistema informático no vive en el vacío: requiere entender al usuario, cuidar la integridad de los datos, afinar el hardware y asegurar que no falle en momentos críticos.
           </p>
         </div>
@@ -174,9 +174,9 @@
           <!-- Pilar 1 -->
           <div class="pillar-card">
             <div class="pillar-icon-box">💻</div>
-            <h3 class="pillar-title">Desarrollo de Software</h3>
-            <p class="pillar-desc">
-              Sólida base en <strong>Java</strong>, Spring Boot, bases de datos SQL (MySQL, PostgreSQL) y aplicaciones web con React. Arquitecturas limpias y persistencia confiable.
+            <h3 class="pillar-title" data-i18n="pillar1Title">Desarrollo de Software</h3>
+            <p class="pillar-desc" data-i18n="pillar1Desc">
+              Sólida base en Java, Spring Boot, bases de datos SQL (MySQL, PostgreSQL) y aplicaciones web con React. Arquitecturas limpias y persistencia confiable.
             </p>
             <div class="pillar-tags">
               <span class="pillar-tag">Java SE/EE</span>
@@ -189,9 +189,9 @@
           <!-- Pilar 2 -->
           <div class="pillar-card">
             <div class="pillar-icon-box">🎙️</div>
-            <h3 class="pillar-title">Streaming &amp; Multimedia</h3>
-            <p class="pillar-desc">
-              Configuración avanzada de <strong>OBS Studio</strong>, microservicios en tiempo real con WebSockets para marcadores deportivos, balance de audio y diseño vectorial con <strong>Inkscape</strong>.
+            <h3 class="pillar-title" data-i18n="pillar2Title">Streaming &amp; Multimedia</h3>
+            <p class="pillar-desc" data-i18n="pillar2Desc">
+              Configuración avanzada de OBS Studio, microservicios en tiempo real con WebSockets para marcadores deportivos, balance de audio y diseño vectorial con Inkscape.
             </p>
             <div class="pillar-tags">
               <span class="pillar-tag">OBS Studio</span>
@@ -204,14 +204,14 @@
           <!-- Pilar 3 -->
           <div class="pillar-card">
             <div class="pillar-icon-box">🛡️</div>
-            <h3 class="pillar-title">Seguridad &amp; Peritaje Forense</h3>
-            <p class="pillar-desc">
-              Titulado como <strong>Perito Informático Forense</strong> (CPCIR). Preservación de evidencia digital, cadena de custodia, verificación de hashes criptográficos (SHA-256) y certificación ESET.
+            <h3 class="pillar-title" data-i18n="pillar3Title">Seguridad &amp; Peritaje Forense</h3>
+            <p class="pillar-desc" data-i18n="pillar3Desc">
+              Titulado como Perito Informático Forense (CPCIR). Preservación de evidencia digital, cadena de custodia, verificación de hashes criptográficos (SHA-256) y certificación ESET.
             </p>
             <div class="pillar-tags">
-              <span class="pillar-tag">Peritaje Judicial</span>
-              <span class="pillar-tag">Cadena Custodia</span>
-              <span class="pillar-tag">Auditoría</span>
+              <span class="pillar-tag" data-i18n="pillar3Tag1">Peritaje Judicial</span>
+              <span class="pillar-tag" data-i18n="pillar3Tag2">Cadena Custodia</span>
+              <span class="pillar-tag" data-i18n="pillar3Tag3">Auditoría</span>
               <span class="pillar-tag">ESET</span>
             </div>
           </div>
@@ -219,15 +219,15 @@
           <!-- Pilar 4 -->
           <div class="pillar-card">
             <div class="pillar-icon-box">🤝</div>
-            <h3 class="pillar-title">Soporte &amp; Trato Humano</h3>
-            <p class="pillar-desc">
-              Mantenimiento de computadoras, redes LAN, reparación de celulares y coordinación docente en <strong>PAMI</strong>. Empatía, paciencia y capacidad de traducir la tecnología a lenguaje humano.
+            <h3 class="pillar-title" data-i18n="pillar4Title">Soporte &amp; Trato Humano</h3>
+            <p class="pillar-desc" data-i18n="pillar4Desc">
+              Mantenimiento de computadoras, redes LAN, reparación de celulares y coordinación docente en PAMI. Empatía, paciencia y capacidad de traducir la tecnología a lenguaje humano.
             </p>
             <div class="pillar-tags">
-              <span class="pillar-tag">Reparación Celulares</span>
-              <span class="pillar-tag">Redes LAN</span>
-              <span class="pillar-tag">Docencia PAMI</span>
-              <span class="pillar-tag">Help Desk</span>
+              <span class="pillar-tag" data-i18n="pillar4Tag1">Reparación Celulares</span>
+              <span class="pillar-tag" data-i18n="pillar4Tag2">Redes LAN</span>
+              <span class="pillar-tag" data-i18n="pillar4Tag3">Docencia PAMI</span>
+              <span class="pillar-tag" data-i18n="pillar4Tag4">Help Desk</span>
             </div>
           </div>
         </div>
@@ -240,9 +240,9 @@
     <section id="proyectos" class="projects-section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">PORTFOLIO TÉCNICO</span>
-          <h2 class="section-title">Soluciones Reales Construidas</h2>
-          <p class="section-subtitle">
+          <span class="section-tag" data-i18n="projectsTag">PORTFOLIO TÉCNICO</span>
+          <h2 class="section-title" data-i18n="projectsTitle">Soluciones Reales Construidas</h2>
+          <p class="section-subtitle" data-i18n="projectsSubtitle">
             Proyectos aplicados con foco en resolver problemas de negocio, eventos deportivos en directo y auditoría de datos.
           </p>
         </div>
@@ -269,9 +269,9 @@
     <section id="servicios" class="services-section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">SERVICIOS &amp; VALOR AGREGADO</span>
-          <h2 class="section-title">¿Cómo puedo sumar a tu equipo o proyecto?</h2>
-          <p class="section-subtitle">
+          <span class="section-tag" data-i18n="servicesTag">SERVICIOS &amp; VALOR AGREGADO</span>
+          <h2 class="section-title" data-i18n="servicesTitle">¿Cómo puedo sumar a tu equipo o proyecto?</h2>
+          <p class="section-subtitle" data-i18n="servicesSubtitle">
             Un abanico de servicios técnicos con rigor analítico, criterio práctico y compromiso de entrega.
           </p>
         </div>
@@ -281,12 +281,12 @@
           <div class="service-card">
             <div class="service-icon">⚡</div>
             <div class="service-body">
-              <h3>Desarrollo de Software y Sistemas de Gestión</h3>
-              <p>Diseño y construcción de software a medida para comercios, clínicas e instituciones. Lógica robusta en Java, bases de datos normalizadas y paneles web intuitivos.</p>
+              <h3 data-i18n="serv1Title">Desarrollo de Software y Sistemas de Gestión</h3>
+              <p data-i18n="serv1Desc">Diseño y construcción de software a medida para comercios, clínicas e instituciones. Lógica robusta en Java, bases de datos normalizadas y paneles web intuitivos.</p>
               <ul class="service-features">
-                <li>Sistemas ERP, control de inventario y punto de venta (POS)</li>
-                <li>Historias clínicas, turneros y trazabilidad de pacientes</li>
-                <li>Desarrollo de APIs REST seguras e integración de bases de datos</li>
+                <li data-i18n="serv1Feat1">Sistemas ERP, control de inventario y punto de venta (POS)</li>
+                <li data-i18n="serv1Feat2">Historias clínicas, turneros y trazabilidad de pacientes</li>
+                <li data-i18n="serv1Feat3">Desarrollo de APIs REST seguras e integración de bases de datos</li>
               </ul>
             </div>
           </div>
@@ -295,12 +295,12 @@
           <div class="service-card">
             <div class="service-icon">📡</div>
             <div class="service-body">
-              <h3>Producción Técnica de Streaming &amp; Broadcast Deportivo</h3>
-              <p>Puesta a punto completa para transmisiones de partidos de fútbol, básquetbol y eventos institucionales con calidad televisiva.</p>
+              <h3 data-i18n="serv2Title">Producción Técnica de Streaming &amp; Broadcast Deportivo</h3>
+              <p data-i18n="serv2Desc">Puesta a punto completa para transmisiones de partidos de fútbol, básquetbol y eventos institucionales con calidad televisiva.</p>
               <ul class="service-features">
-                <li>Overlays interactivos con marcadores en tiempo real (reloj y shot clock)</li>
-                <li>Diseño gráfico vectorial de escudos y gráficos con Inkscape</li>
-                <li>Configuración y mezcla de audio multicanal sin retardos ni acoples</li>
+                <li data-i18n="serv2Feat1">Overlays interactivos con marcadores en tiempo real (reloj y shot clock)</li>
+                <li data-i18n="serv2Feat2">Diseño gráfico vectorial de escudos y gráficos con Inkscape</li>
+                <li data-i18n="serv2Feat3">Configuración y mezcla de audio multicanal sin retardos ni acoples</li>
               </ul>
             </div>
           </div>
@@ -309,12 +309,12 @@
           <div class="service-card">
             <div class="service-icon">🛠️</div>
             <div class="service-body">
-              <h3>Soporte Técnico Especializado, Hardware y Redes</h3>
-              <p>Mantenimiento preventivo y correctivo para mantener la infraestructura tecnológica operativa al 100%.</p>
+              <h3 data-i18n="serv3Title">Soporte Técnico Especializado, Hardware y Redes</h3>
+              <p data-i18n="serv3Desc">Mantenimiento preventivo y correctivo para mantener la infraestructura tecnológica operativa al 100%.</p>
               <ul class="service-features">
-                <li>Reparación de computadoras de escritorio, notebooks y redes LAN</li>
-                <li>Diagnóstico y reparación de teléfonos celulares y dispositivos móviles</li>
-                <li>Instalación de sistemas operativos, copias de seguridad y securización</li>
+                <li data-i18n="serv3Feat1">Reparación de computadoras de escritorio, notebooks y redes LAN</li>
+                <li data-i18n="serv3Feat2">Diagnóstico y reparación de teléfonos celulares y dispositivos móviles</li>
+                <li data-i18n="serv3Feat3">Instalación de sistemas operativos, copias de seguridad y securización</li>
               </ul>
             </div>
           </div>
@@ -323,12 +323,12 @@
           <div class="service-card">
             <div class="service-icon">⚖️</div>
             <div class="service-body">
-              <h3>Peritaje Informático Forense &amp; Auditoría</h3>
-              <p>Asesoramiento técnico legal y pericial para la preservación y análisis de evidencia digital con rigor judicial.</p>
+              <h3 data-i18n="serv4Title">Peritaje Informático Forense &amp; Auditoría</h3>
+              <p data-i18n="serv4Desc">Asesoramiento técnico legal y pericial para la preservación y análisis de evidencia digital con rigor judicial.</p>
               <ul class="service-features">
-                <li>Adquisición forense con bloqueadores de escritura y verificación SHA-256</li>
-                <li>Protocolos estrictos de cadena de custodia para tribunales</li>
-                <li>Auditoría de integridad de bases de datos y registros de actividad</li>
+                <li data-i18n="serv4Feat1">Adquisición forense con bloqueadores de escritura y verificación SHA-256</li>
+                <li data-i18n="serv4Feat2">Protocolos estrictos de cadena de custodia para tribunales</li>
+                <li data-i18n="serv4Feat3">Auditoría de integridad de bases de datos y registros de actividad</li>
               </ul>
             </div>
           </div>
@@ -342,9 +342,9 @@
     <section id="habilidades" class="skills-section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">ARSENAL TÉCNICO</span>
-          <h2 class="section-title">Tecnologías, Herramientas &amp; Habilidades</h2>
-          <p class="section-subtitle">
+          <span class="section-tag" data-i18n="skillsTag">ARSENAL TÉCNICO</span>
+          <h2 class="section-title" data-i18n="skillsTitle">Tecnologías, Herramientas &amp; Habilidades</h2>
+          <p class="section-subtitle" data-i18n="skillsSubtitle">
             Herramientas que manejo con criterio técnico para transformar ideas en sistemas funcionales.
           </p>
         </div>
@@ -354,10 +354,10 @@
           <div class="skill-category-card">
             <div class="skill-cat-header">
               <span class="skill-cat-icon">☕</span>
-              <h3 class="skill-cat-title">Lenguajes de Programación</h3>
+              <h3 class="skill-cat-title" data-i18n="cat1Title">Lenguajes de Programación</h3>
             </div>
             <div class="skill-items">
-              <span class="skill-pill highlight">Java (Especialidad)</span>
+              <span class="skill-pill highlight" data-i18n="skillJavaSpecialty">Java (Especialidad)</span>
               <span class="skill-pill highlight">SQL</span>
               <span class="skill-pill">JavaScript</span>
               <span class="skill-pill">TypeScript</span>
@@ -372,7 +372,7 @@
           <div class="skill-category-card">
             <div class="skill-cat-header">
               <span class="skill-cat-icon">🗄️</span>
-              <h3 class="skill-cat-title">Frameworks &amp; Datos</h3>
+              <h3 class="skill-cat-title" data-i18n="cat2Title">Frameworks &amp; Datos</h3>
             </div>
             <div class="skill-items">
               <span class="skill-pill highlight">Spring Boot</span>
@@ -390,16 +390,16 @@
           <div class="skill-category-card">
             <div class="skill-cat-header">
               <span class="skill-cat-icon">🎙️</span>
-              <h3 class="skill-cat-title">Streaming &amp; Multimedia</h3>
+              <h3 class="skill-cat-title" data-i18n="cat3Title">Streaming &amp; Multimedia</h3>
             </div>
             <div class="skill-items">
               <span class="skill-pill highlight">OBS Studio</span>
-              <span class="skill-pill highlight">Inkscape (Vectorial)</span>
-              <span class="skill-pill highlight">Audio Mixer &amp; EQ</span>
-              <span class="skill-pill">WebSockets Real-Time</span>
-              <span class="skill-pill">Overlays Deportivos</span>
+              <span class="skill-pill highlight" data-i18n="skillVectorial">Inkscape (Vectorial)</span>
+              <span class="skill-pill highlight" data-i18n="skillAudioMixer">Audio Mixer &amp; EQ</span>
+              <span class="skill-pill" data-i18n="skillRealtime">WebSockets Real-Time</span>
+              <span class="skill-pill" data-i18n="skillOverlays">Overlays Deportivos</span>
               <span class="skill-pill">Browser Sources</span>
-              <span class="skill-pill">Transmisión YouTube/FB</span>
+              <span class="skill-pill" data-i18n="skillStreamingPlatform">Transmisión YouTube/FB</span>
             </div>
           </div>
 
@@ -407,15 +407,15 @@
           <div class="skill-category-card">
             <div class="skill-cat-header">
               <span class="skill-cat-icon">🔧</span>
-              <h3 class="skill-cat-title">Hardware, Soporte &amp; Redes</h3>
+              <h3 class="skill-cat-title" data-i18n="cat4Title">Hardware, Soporte &amp; Redes</h3>
             </div>
             <div class="skill-items">
-              <span class="skill-pill highlight">Reparación Celulares (Cenedi)</span>
-              <span class="skill-pill highlight">Mantenimiento de PC</span>
+              <span class="skill-pill highlight" data-i18n="skillMobileRepair">Reparación Celulares (Cenedi)</span>
+              <span class="skill-pill highlight" data-i18n="skillPcMaintenance">Mantenimiento de PC</span>
               <span class="skill-pill">Redes LAN / WLAN</span>
-              <span class="skill-pill">Help Desk &amp; Tickets</span>
-              <span class="skill-pill">Diagnóstico Electrónico</span>
-              <span class="skill-pill">Backups &amp; Clonado</span>
+              <span class="skill-pill" data-i18n="skillHelpDesk">Help Desk &amp; Tickets</span>
+              <span class="skill-pill" data-i18n="skillElecDiag">Diagnóstico Electrónico</span>
+              <span class="skill-pill" data-i18n="skillBackups">Backups &amp; Clonado</span>
             </div>
           </div>
 
@@ -423,15 +423,15 @@
           <div class="skill-category-card">
             <div class="skill-cat-header">
               <span class="skill-cat-icon">🛡️</span>
-              <h3 class="skill-cat-title">Seguridad &amp; Peritaje</h3>
+              <h3 class="skill-cat-title" data-i18n="cat5Title">Seguridad &amp; Peritaje</h3>
             </div>
             <div class="skill-items">
-              <span class="skill-pill highlight">Perito Forense (CPCIR)</span>
-              <span class="skill-pill highlight">Cadena de Custodia</span>
-              <span class="skill-pill">Criptografía SHA-256</span>
-              <span class="skill-pill">Seguridad Móvil (ESET)</span>
-              <span class="skill-pill">Navegación Segura</span>
-              <span class="skill-pill">Auditoría de Logs</span>
+              <span class="skill-pill highlight" data-i18n="skillForensicOfficial">Perito Forense (CPCIR)</span>
+              <span class="skill-pill highlight" data-i18n="skillChainCustody">Cadena de Custodia</span>
+              <span class="skill-pill" data-i18n="skillCrypto">Criptografía SHA-256</span>
+              <span class="skill-pill" data-i18n="skillMobileSec">Seguridad Móvil (ESET)</span>
+              <span class="skill-pill" data-i18n="skillSafeBrowsing">Navegación Segura</span>
+              <span class="skill-pill" data-i18n="skillLogAudit">Auditoría de Logs</span>
             </div>
           </div>
 
@@ -439,15 +439,15 @@
           <div class="skill-category-card">
             <div class="skill-cat-header">
               <span class="skill-cat-icon">🤝</span>
-              <h3 class="skill-cat-title">Gestión &amp; Comunicación</h3>
+              <h3 class="skill-cat-title" data-i18n="cat6Title">Gestión &amp; Comunicación</h3>
             </div>
             <div class="skill-items">
-              <span class="skill-pill highlight">Docencia &amp; PAMI</span>
-              <span class="skill-pill highlight">Scrum / Metodologías Ágiles</span>
+              <span class="skill-pill highlight" data-i18n="skillTeachingPami">Docencia &amp; PAMI</span>
+              <span class="skill-pill highlight" data-i18n="skillAgileScrum">Scrum / Metodologías Ágiles</span>
               <span class="skill-pill">MS Project 2019</span>
-              <span class="skill-pill">Excel &amp; Word Avanzado (INAP)</span>
-              <span class="skill-pill">Atención al Cliente</span>
-              <span class="skill-pill">Control de Inventario</span>
+              <span class="skill-pill" data-i18n="skillOfficeAdv">Excel &amp; Word Avanzado (INAP)</span>
+              <span class="skill-pill" data-i18n="skillCustCare">Atención al Cliente</span>
+              <span class="skill-pill" data-i18n="skillInventory">Control de Inventario</span>
             </div>
           </div>
         </div>
@@ -460,9 +460,9 @@
     <section id="trayectoria" class="experience-section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">TRAYECTORIA &amp; ESTUDIOS</span>
-          <h2 class="section-title">Experiencia y Educación Formal</h2>
-          <p class="section-subtitle">
+          <span class="section-tag" data-i18n="expTag">TRAYECTORIA &amp; ESTUDIOS</span>
+          <h2 class="section-title" data-i18n="expTitle">Experiencia y Educación Formal</h2>
+          <p class="section-subtitle" data-i18n="expSubtitle">
             Una trayectoria forjada con estudio universitario, certificaciones oficiales y experiencia en el campo real.
           </p>
         </div>
@@ -473,11 +473,11 @@
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <div class="timeline-header">
-                <h3 class="timeline-role">Coordinador del Programa de Alfabetización Digital</h3>
-                <span class="timeline-period">Dic 2025 — Presente</span>
+                <h3 class="timeline-role" data-i18n="role1">Coordinador del Programa de Alfabetización Digital</h3>
+                <span class="timeline-period" data-i18n="period1">Dic 2025 — Presente</span>
               </div>
-              <div class="timeline-org">PAMI (Instituto Nacional de Servicios Sociales para Jubilados y Pensionados)</div>
-              <p class="timeline-desc">
+              <div class="timeline-org" data-i18n="org1">PAMI (Instituto Nacional de Servicios Sociales para Jubilados y Pensionados)</div>
+              <p class="timeline-desc" data-i18n="desc1">
                 Diseño e impartición de talleres prácticos para personas mayores, facilitando la inclusión digital, el uso seguro de aplicaciones móviles, trámites online y protección contra fraudes informáticos.
               </p>
             </div>
@@ -488,11 +488,11 @@
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <div class="timeline-header">
-                <h3 class="timeline-role">Operador de Depósito, Stock &amp; Caja</h3>
-                <span class="timeline-period">Feb 2024 — Presente</span>
+                <h3 class="timeline-role" data-i18n="role2">Operador de Depósito, Stock &amp; Caja</h3>
+                <span class="timeline-period" data-i18n="period2">Feb 2024 — Presente</span>
               </div>
-              <div class="timeline-org">Minimarket Chamical</div>
-              <p class="timeline-desc">
+              <div class="timeline-org" data-i18n="org2">Minimarket Chamical</div>
+              <p class="timeline-desc" data-i18n="desc2">
                 Gestión de inventarios con más de 200 referencias diarias, reduciendo discrepancias en un 40%. Arqueos de caja diarios con 100% de precisión y atención directa al cliente.
               </p>
             </div>
@@ -503,11 +503,11 @@
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <div class="timeline-header">
-                <h3 class="timeline-role">Analista Universitario en Sistemas de Información</h3>
-                <span class="timeline-period">Titulado — Septiembre 2024</span>
+                <h3 class="timeline-role" data-i18n="role3">Analista Universitario en Sistemas de Información</h3>
+                <span class="timeline-period" data-i18n="period3">Titulado — Septiembre 2024</span>
               </div>
-              <div class="timeline-org">Universidad Nacional de La Rioja (UNLaR) — Sede Chamical</div>
-              <p class="timeline-desc">
+              <div class="timeline-org" data-i18n="org3">Universidad Nacional de La Rioja (UNLaR) — Sede Chamical</div>
+              <p class="timeline-desc" data-i18n="desc3">
                 Formación integral en modelado de datos relacionales, arquitectura de software, algoritmos avanzados, programación orientada a objetos (Java) y análisis de requerimientos organizacionales. (Licenciatura en curso).
               </p>
             </div>
@@ -518,11 +518,11 @@
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <div class="timeline-header">
-                <h3 class="timeline-role">Perito Informático Forense Oficial</h3>
-                <span class="timeline-period">Certificación Oficial — 2023</span>
+                <h3 class="timeline-role" data-i18n="role4">Perito Informático Forense Oficial</h3>
+                <span class="timeline-period" data-i18n="period4">Certificación Oficial — 2023</span>
               </div>
-              <div class="timeline-org">Consejo Profesional de Ciencias Informáticas de La Rioja (CPCIR)</div>
-              <p class="timeline-desc">
+              <div class="timeline-org" data-i18n="org4">Consejo Profesional de Ciencias Informáticas de La Rioja (CPCIR)</div>
+              <p class="timeline-desc" data-i18n="desc4">
                 Habilitación profesional para la investigación forense digital, análisis de dispositivos de almacenamiento, recolección de indicios informáticos y emisión de informes periciales válidos ante la justicia.
               </p>
             </div>
@@ -533,11 +533,11 @@
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <div class="timeline-header">
-                <h3 class="timeline-role">Prensa, Difusión y Soporte Técnico Informático</h3>
-                <span class="timeline-period">Marzo 2020 — Marzo 2023</span>
+                <h3 class="timeline-role" data-i18n="role5">Prensa, Difusión y Soporte Técnico Informático</h3>
+                <span class="timeline-period" data-i18n="period5">Marzo 2020 — Marzo 2023</span>
               </div>
-              <div class="timeline-org">Concejo Deliberante de Chamical</div>
-              <p class="timeline-desc">
+              <div class="timeline-org" data-i18n="org5">Concejo Deliberante de Chamical</div>
+              <p class="timeline-desc" data-i18n="desc5">
                 Mantenimiento preventivo y correctivo de más de 20 computadoras e impresoras (reduciendo tiempos de inactividad en un 80%), soporte a usuarios de distintas áreas legislativas y gestión de comunicación digital institucional.
               </p>
             </div>
@@ -548,11 +548,11 @@
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <div class="timeline-header">
-                <h3 class="timeline-role">Operador Técnico Sistema SINALIC &amp; Tránsito</h3>
-                <span class="timeline-period">Diciembre 2019 — Marzo 2020</span>
+                <h3 class="timeline-role" data-i18n="role6">Operador Técnico Sistema SINALIC &amp; Tránsito</h3>
+                <span class="timeline-period" data-i18n="period6">Diciembre 2019 — Marzo 2020</span>
               </div>
-              <div class="timeline-org">Municipalidad de Chamical</div>
-              <p class="timeline-desc">
+              <div class="timeline-org" data-i18n="org6">Municipalidad de Chamical</div>
+              <p class="timeline-desc" data-i18n="desc6">
                 Procesamiento de licencias de conducir con 99% de precisión bajo el Sistema Nacional de Licencias de Conducir (SINALIC), aplicando protocolos de confidencialidad y resguardo de datos ciudadanos.
               </p>
             </div>
@@ -567,9 +567,9 @@
     <section id="contacto" class="contact-section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">CONECTEMOS</span>
-          <h2 class="section-title">Hablemos de tu Proyecto o Vacante</h2>
-          <p class="section-subtitle">
+          <span class="section-tag" data-i18n="contactTag">CONECTEMOS</span>
+          <h2 class="section-title" data-i18n="contactTitle">Hablemos de tu Proyecto o Vacante</h2>
+          <p class="section-subtitle" data-i18n="contactSubtitle">
             Estoy disponible para contrataciones remotas, proyectos de software a medida, transmisiones en vivo y consultoría técnica.
           </p>
         </div>
@@ -578,8 +578,8 @@
           <!-- Canales Directos -->
           <div class="contact-card-info">
             <div>
-              <h3>Canales de Comunicación Directa</h3>
-              <p style="color: var(--text-secondary); margin-top: 0.5rem; font-size: 0.95rem;">
+              <h3 data-i18n="contactChannelsTitle">Canales de Comunicación Directa</h3>
+              <p data-i18n="contactChannelsSubtitle" style="color: var(--text-secondary); margin-top: 0.5rem; font-size: 0.95rem;">
                 Respondé en cuestión de minutos. Si necesitas una consulta técnica o coordinar una entrevista, no dudes en escribirme.
               </p>
 
@@ -589,11 +589,11 @@
                   <div class="channel-left">
                     <span class="channel-icon">💬</span>
                     <div>
-                      <div class="channel-label">WhatsApp Directo</div>
-                      <div class="channel-val">+54 3826 449578</div>
+                      <div class="channel-label" data-i18n="channelWaLabel">WhatsApp Directo</div>
+                      <div class="channel-val">+54 9 3826 449578</div>
                     </div>
                   </div>
-                  <a href="https://wa.me/5493826449578" target="_blank" rel="noopener noreferrer" class="btn-copy">Escribir</a>
+                  <a href="https://wa.me/5493826449578" target="_blank" rel="noopener noreferrer" class="btn-copy" data-i18n="btnWaWrite">Escribir</a>
                 </div>
 
                 <!-- Email -->
@@ -601,11 +601,11 @@
                   <div class="channel-left">
                     <span class="channel-icon">✉️</span>
                     <div>
-                      <div class="channel-label">Correo Electrónico</div>
+                      <div class="channel-label" data-i18n="channelEmailLabel">Correo Electrónico</div>
                       <div class="channel-val">brixtar37@gmail.com</div>
                     </div>
                   </div>
-                  <button class="btn-copy" data-copy="brixtar37@gmail.com">Copiar</button>
+                  <button class="btn-copy" data-copy="brixtar37@gmail.com" data-i18n="btnCopy">Copiar</button>
                 </div>
 
                 <!-- LinkedIn -->
@@ -613,11 +613,11 @@
                   <div class="channel-left">
                     <span class="channel-icon">💼</span>
                     <div>
-                      <div class="channel-label">LinkedIn Profesional</div>
+                      <div class="channel-label" data-i18n="channelLinkedinLabel">LinkedIn Profesional</div>
                       <div class="channel-val">linkedin.com/in/brixtar24</div>
                     </div>
                   </div>
-                  <a href="https://linkedin.com/in/brixtar24" target="_blank" rel="noopener noreferrer" class="btn-copy">Ver Perfil</a>
+                  <a href="https://linkedin.com/in/brixtar24" target="_blank" rel="noopener noreferrer" class="btn-copy" data-i18n="btnLinkedin">Ver Perfil</a>
                 </div>
 
                 <!-- GitHub -->
@@ -625,11 +625,11 @@
                   <div class="channel-left">
                     <span class="channel-icon">🐙</span>
                     <div>
-                      <div class="channel-label">GitHub Oficial</div>
+                      <div class="channel-label" data-i18n="channelGithubLabel">GitHub Oficial</div>
                       <div class="channel-val">github.com/brixtar</div>
                     </div>
                   </div>
-                  <a href="https://github.com/brixtar" target="_blank" rel="noopener noreferrer" class="btn-copy">Ver Repos</a>
+                  <a href="https://github.com/brixtar" target="_blank" rel="noopener noreferrer" class="btn-copy" data-i18n="btnGithub">Ver Repos</a>
                 </div>
 
                 <!-- Ubicación -->
@@ -637,17 +637,17 @@
                   <div class="channel-left">
                     <span class="channel-icon">📍</span>
                     <div>
-                      <div class="channel-label">Ubicación &amp; Modalidad</div>
-                      <div class="channel-val">Chamical, La Rioja, Argentina (Remoto)</div>
+                      <div class="channel-label" data-i18n="channelLocationLabel">Ubicación &amp; Modalidad</div>
+                      <div class="channel-val" data-i18n="channelLocationVal">Chamical, La Rioja, Argentina (Remoto)</div>
                     </div>
                   </div>
-                  <span style="font-size: 0.78rem; color: var(--emerald); font-weight: 700;">100% ONLINE</span>
+                  <span style="font-size: 0.78rem; color: var(--emerald); font-weight: 700;" data-i18n="channelLocationBadge">100% ONLINE</span>
                 </div>
               </div>
             </div>
 
             <div>
-              <a href="assets/docs/CV_Leonardo_Brizuela.pdf" class="btn-primary" style="width: 100%;" download="CV_Leonardo_Brizuela.pdf">
+              <a href="assets/docs/CV_Leonardo_Brizuela.pdf" class="btn-primary" style="width: 100%;" download="CV_Leonardo_Brizuela.pdf" data-i18n="btnDownloadCvFull">
                 <span>📄 Descargar CV Completo en PDF</span>
               </a>
             </div>
@@ -655,25 +655,25 @@
 
           <!-- Formulario Rápido -->
           <div class="contact-form-card">
-            <h3 style="margin-bottom: 1.25rem;">Enviame un mensaje directo</h3>
+            <h3 style="margin-bottom: 1.25rem;" data-i18n="formTitle">Enviame un mensaje directo</h3>
             <form id="contact-form">
               <div class="form-group">
-                <label for="form-name" class="form-label">Tu Nombre o Empresa</label>
-                <input type="text" id="form-name" class="form-control" placeholder="Ej: Roberto Gómez / Empresa X" required>
+                <label for="form-name" class="form-label" data-i18n="formNameLabel">Tu Nombre o Empresa</label>
+                <input type="text" id="form-name" class="form-control" placeholder="Ej: Roberto Gómez / Empresa X" data-i18n-placeholder="formNamePlaceholder" required>
               </div>
 
               <div class="form-group">
-                <label for="form-email" class="form-label">Tu Correo Electrónico</label>
-                <input type="email" id="form-email" class="form-control" placeholder="nombre@correo.com" required>
+                <label for="form-email" class="form-label" data-i18n="formEmailLabel">Tu Correo Electrónico</label>
+                <input type="email" id="form-email" class="form-control" placeholder="nombre@correo.com" data-i18n-placeholder="formEmailPlaceholder" required>
               </div>
 
               <div class="form-group">
-                <label for="form-message" class="form-label">Mensaje o Detalle del Proyecto</label>
-                <textarea id="form-message" class="form-control" placeholder="Contame qué necesitas o la propuesta que tienes..." required></textarea>
+                <label for="form-message" class="form-label" data-i18n="formMsgLabel">Mensaje o Detalle del Proyecto</label>
+                <textarea id="form-message" class="form-control" placeholder="Contame qué necesitas o la propuesta que tienes..." data-i18n-placeholder="formMsgPlaceholder" required></textarea>
               </div>
 
               <button type="submit" class="btn-primary" style="width: 100%; margin-top: 0.5rem;">
-                <span>🚀 Enviar Mensaje</span>
+                <span data-i18n="formBtnSubmit">🚀 Enviar Mensaje</span>
               </button>
             </form>
           </div>
@@ -713,7 +713,7 @@
        ======================================================================== -->
   <footer class="site-footer">
     <div class="container footer-content">
-      <div class="footer-copy">
+      <div class="footer-copy" data-i18n="footerCopy">
         © 2026 <strong>Leonardo Miguel Brizuela</strong>. Analista de Sistemas &amp; Solucionador Tecnológico.
       </div>
       <div class="footer-socials">
