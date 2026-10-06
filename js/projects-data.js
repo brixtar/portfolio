@@ -8,7 +8,7 @@ const PROJECTS_DATA = [
     image: "assets/images/siga.jpg",
     tags: ["Java", "Spring Boot", "React", "TypeScript", "PostgreSQL", "REST API"],
     featured: true,
-    githubUrl: "https://github.com/brixtar",
+    githubUrl: "https://github.com/brixtar/siga1-modern",
     demoUrl: null,
     whatsappMsg: "Hola Leonardo, estuve viendo el proyecto Si.G.A (Gestión Veterinaria) en tu portfolio y me gustaría hacerte una consulta técnica/comercial.",
     fullDesc: `
@@ -65,7 +65,7 @@ const PROJECTS_DATA = [
     image: "assets/images/chamisistem.jpg",
     tags: ["Java", "SQL / MySQL", "Control de Stock", "POS", "Facturación", "Desktop"],
     featured: true,
-    githubUrl: "https://github.com/brixtar",
+    githubUrl: "https://github.com/brixtar/sistemadeventa1",
     demoUrl: null,
     whatsappMsg: "Hola Leonardo, me interesa el software de facturación e inventario ChamiSistem que vi en tu portfolio.",
     fullDesc: `
@@ -135,7 +135,7 @@ const PROJECTS_DATA = [
     image: "assets/images/chamisistem.jpg",
     tags: ["JavaScript", "Chrome Extension API", "DOM Automation", "Scripts"],
     featured: false,
-    githubUrl: "https://github.com/brixtar",
+    githubUrl: "https://github.com/brixtar/gmail-delete-extension",
     demoUrl: null,
     whatsappMsg: "Hola Leonardo, quisiera consultarte sobre las herramientas de automatización y scripts para Gmail.",
     fullDesc: `
