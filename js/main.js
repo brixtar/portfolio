@@ -316,31 +316,24 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // ==========================================================================
-  // FORMULARIO DE CONTACTO (INTERACTIVO)
+  // FORMULARIO DE CONTACTO (ENVÍO DIRECTO A WHATSAPP)
   // ==========================================================================
   const contactForm = document.getElementById("contact-form");
   if (contactForm) {
     contactForm.addEventListener("submit", (e) => {
       e.preventDefault();
-      const name = document.getElementById("form-name").value;
-      const email = document.getElementById("form-email").value;
-      const message = document.getElementById("form-message").value;
+      const name = document.getElementById("form-name").value.trim();
+      const email = document.getElementById("form-email").value.trim();
+      const message = document.getElementById("form-message").value.trim();
 
-      const subject = encodeURIComponent(
-        currentLang === "es" 
-          ? `Contacto desde Portfolio - ${name}` 
-          : `Portfolio Inquiry - ${name}`
-      );
-      const body = encodeURIComponent(
-        currentLang === "es"
-          ? `Hola Leonardo,\n\nMi nombre es ${name} (${email}).\n\nMensaje:\n${message}\n\nEnviado desde tu portfolio web.`
-          : `Hi Leonardo,\n\nMy name is ${name} (${email}).\n\nMessage:\n${message}\n\nSent from your web portfolio.`
-      );
-      
-      const mailtoLink = `mailto:brixtar37@gmail.com?subject=${subject}&body=${body}`;
-      window.location.href = mailtoLink;
+      const text = currentLang === "es"
+        ? `Hola Leonardo! Mi nombre es *${name}* (${email}).\n\nTe contacto desde tu portfolio web:\n${message}`
+        : `Hi Leonardo! My name is *${name}* (${email}).\n\nI am contacting you from your web portfolio:\n${message}`;
 
-      showToast(currentLang === "es" ? "Abriendo cliente de correo..." : "Opening email client...");
+      const waUrl = `https://wa.me/5493826449578?text=${encodeURIComponent(text)}`;
+      window.open(waUrl, "_blank", "noopener,noreferrer");
+
+      showToast(currentLang === "es" ? "Abriendo WhatsApp..." : "Opening WhatsApp...");
       contactForm.reset();
     });
   }

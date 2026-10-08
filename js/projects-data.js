@@ -473,7 +473,7 @@ const I18N = {
     formEmailPlaceholder: "nombre@correo.com",
     formMsgLabel: "Mensaje o Detalle del Proyecto",
     formMsgPlaceholder: "Contame qué necesitas o la propuesta que tienes...",
-    formBtnSubmit: "🚀 Enviar Mensaje",
+    formBtnSubmit: "💬 Enviar por WhatsApp",
 
     // Footer
     footerCopy: "© 2026 Leonardo Miguel Brizuela. Analista de Sistemas & Solucionador Tecnológico."
@@ -652,7 +652,7 @@ const I18N = {
     formEmailPlaceholder: "name@company.com",
     formMsgLabel: "Message or Project Description",
     formMsgPlaceholder: "Tell me about your requirements or what you'd like to collaborate on...",
-    formBtnSubmit: "🚀 Send Message",
+    formBtnSubmit: "💬 Send via WhatsApp",
 
     // Footer
     footerCopy: "© 2026 Leonardo Miguel Brizuela. Systems Analyst & Technology Problem Solver."
