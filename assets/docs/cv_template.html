@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CV — Leonardo Miguel Brizuela (ATS Friendly)</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+    @page {
+      size: A4;
+      margin: 8mm 10mm 8mm 10mm;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: #1e293b;
+      background: #ffffff;
+      line-height: 1.34;
+      font-size: 8.5pt;
+    }
+
+    .cv-container {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    .cv-header {
+      border-bottom: 2px solid #0284c7;
+      padding-bottom: 5px;
+      margin-bottom: 7px;
+    }
+
+    .name-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 3px;
+    }
+
+    .candidate-name {
+      font-size: 19pt;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #0f172a;
+      text-transform: uppercase;
+    }
+
+    .candidate-role {
+      font-size: 10pt;
+      font-weight: 700;
+      color: #0284c7;
+      text-align: right;
+    }
+
+    .contact-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      font-size: 8pt;
+      color: #475569;
+      font-weight: 500;
+      border-top: 1px solid #e2e8f0;
+      padding-top: 3px;
+      margin-top: 2px;
+    }
+
+    .contact-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+    }
+
+    .contact-item a {
+      color: #0369a1;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* Secciones */
+    .cv-section {
+      margin-bottom: 6px;
+    }
+
+    .section-title {
+      font-size: 9.2pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #0f172a;
+      border-bottom: 1px solid #cbd5e1;
+      padding-bottom: 2px;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .section-title::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 10px;
+      background: #0284c7;
+      border-radius: 2px;
+    }
+
+    /* Perfil */
+    .summary-text {
+      font-size: 8.3pt;
+      color: #334155;
+      text-align: justify;
+      line-height: 1.34;
+    }
+
+    /* Habilidades */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px 14px;
+      font-size: 8.1pt;
+    }
+
+    .skill-category {
+      display: flex;
+      gap: 4px;
+    }
+
+    .skill-cat-name {
+      font-weight: 700;
+      color: #0f172a;
+      min-width: 95px;
+    }
+
+    .skill-cat-items {
+      color: #334155;
+      flex: 1;
+    }
+
+    /* Experiencia */
+    .experience-item {
+      margin-bottom: 4px;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1px;
+    }
+
+    .item-title {
+      font-size: 8.6pt;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .item-company {
+      font-weight: 600;
+      color: #0284c7;
+    }
+
+    .item-date {
+      font-size: 8pt;
+      font-weight: 600;
+      color: #64748b;
+      white-space: nowrap;
+    }
+
+    .item-bullets {
+      list-style-type: disc;
+      padding-left: 13px;
+      color: #334155;
+      font-size: 8.1pt;
+    }
+
+    .item-bullets li {
+      margin-bottom: 1px;
+      line-height: 1.28;
+    }
+
+    .item-bullets li strong {
+      color: #0f172a;
+    }
+
+    /* Proyectos */
+    .project-item {
+      margin-bottom: 4px;
+    }
+
+    .project-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .project-name {
+      font-weight: 700;
+      font-size: 8.6pt;
+      color: #0f172a;
+    }
+
+    .project-tags {
+      font-size: 7.7pt;
+      font-weight: 600;
+      color: #0369a1;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+
+    .project-desc {
+      font-size: 8.1pt;
+      color: #334155;
+      line-height: 1.28;
+      margin-top: 1px;
+    }
+
+    /* Educación & Certificaciones */
+    .education-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px 10px;
+    }
+
+    .edu-card {
+      background: #f8fafc;
+      border-left: 3px solid #0284c7;
+      padding: 3px 6px;
+      border-radius: 2px;
+    }
+
+    .edu-degree {
+      font-weight: 700;
+      font-size: 8.3pt;
+      color: #0f172a;
+      line-height: 1.25;
+    }
+
+    .edu-institution {
+      font-size: 7.7pt;
+      color: #475569;
+      font-weight: 500;
+    }
+
+    .edu-year {
+      font-size: 7.5pt;
+      color: #0284c7;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cv-container">
+    <!-- ENCABEZADO CONTACTO & IDENTIDAD -->
+    <header class="cv-header">
+      <div class="name-title-row">
+        <h1 class="candidate-name">Leonardo Miguel Brizuela</h1>
+        <div class="candidate-role">Analista de Sistemas &amp; Software Engineer</div>
+      </div>
+      <div class="contact-bar">
+        <span class="contact-item">Chamical, La Rioja, Argentina (Disponible Remoto)</span>
+        <span class="contact-item">Tel: <strong>+54 9 3826 449578</strong></span>
+        <span class="contact-item">Email: <a href="mailto:brixtar37@gmail.com">brixtar37@gmail.com</a></span>
+        <span class="contact-item">LinkedIn: <a href="https://linkedin.com/in/brixtar24">linkedin.com/in/brixtar24</a></span>
+        <span class="contact-item">GitHub: <a href="https://github.com/brixtar">github.com/brixtar</a></span>
+        <span class="contact-item">Portfolio: <a href="https://brixtar.github.io/portfolio/">brixtar.github.io/portfolio</a></span>
+      </div>
+    </header>
+
+    <!-- RESUMEN PROFESIONAL -->
+    <section class="cv-section">
+      <h2 class="section-title">Perfil Profesional</h2>
+      <p class="summary-text">
+        <strong>Analista Universitario en Sistemas de Información (UNLaR)</strong> y <strong>Perito Informático Forense (CPCIR)</strong> especializado en desarrollo de software, soporte técnico e infraestructura de TI. Experiencia comprobada en desarrollo backend y full-stack con <strong>Java (Spring Boot)</strong> y <strong>React</strong>, modelado y optimización de bases de datos relacionales (PostgreSQL, MySQL), arquitectura de eventos en tiempo real con <strong>WebSockets</strong> para transmisiones en vivo (OBS Studio), y mantenimiento de redes y hardware. Enfoque analítico riguroso, trazabilidad, adaptabilidad y comunicación efectiva con usuarios y equipos multidisciplinarios.
+      </p>
+    </section>
+
+    <!-- HABILIDADES TÉCNICAS (OPTIMIZADO PARA ATS) -->
+    <section class="cv-section">
+      <h2 class="section-title">Habilidades Técnicas</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <span class="skill-cat-name">Lenguajes:</span>
+          <span class="skill-cat-items">Java (Especialidad), SQL, JavaScript, TypeScript, Python, PHP, C++, HTML5/CSS3.</span>
+        </div>
+        <div class="skill-category">
+          <span class="skill-cat-name">Frameworks &amp; Web:</span>
+          <span class="skill-cat-items">Spring Boot, Hibernate, React, Node.js, WebSockets, REST APIs, Microservicios.</span>
+        </div>
+        <div class="skill-category">
+          <span class="skill-cat-name">Bases de Datos:</span>
+          <span class="skill-cat-items">PostgreSQL, MySQL, modelado relacional, consultas complejas, optimización e integridad.</span>
+        </div>
+        <div class="skill-category">
+          <span class="skill-cat-name">Multimedia &amp; OBS:</span>
+          <span class="skill-cat-items">OBS Studio (producción en vivo), Inkscape (vectorial 1080p/4K), mezcla de audio en vivo.</span>
+        </div>
+        <div class="skill-category">
+          <span class="skill-cat-name">Seguridad &amp; Forense:</span>
+          <span class="skill-cat-items">Cadena de custodia, clonación bit a bit (write-blocker), hash SHA-256, informes periciales.</span>
+        </div>
+        <div class="skill-category">
+          <span class="skill-cat-name">Herramientas &amp; TI:</span>
+          <span class="skill-cat-items">Git, GitHub, Linux/Windows, redes LAN/Wi-Fi, diagnóstico de hardware y mantenimiento de PC.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCIA LABORAL RELEVANTE -->
+    <section class="cv-section">
+      <h2 class="section-title">Experiencia Laboral</h2>
+
+      <div class="experience-item">
+        <div class="item-header">
+          <span class="item-title">Coordinador de Alfabetización Digital <span class="item-company">| PAMI</span></span>
+          <span class="item-date">Dic. 2025 — Presente</span>
+        </div>
+        <ul class="item-bullets">
+          <li>Diseño e instrucción de talleres prácticos para adultos mayores orientados a la autonomía digital, uso de smartphones y plataformas web oficiales.</li>
+          <li>Capacitación en <strong>ciberseguridad cotidiana</strong>: concientización sobre ingeniería social, estafas virtuales y resguardo de datos bancarios.</li>
+          <li>Excelente feedback de participantes mediante pedagogía clara, empática y adaptada a distintos niveles de adopción tecnológica.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="item-header">
+          <span class="item-title">Operador de Stock, Inventario &amp; Caja <span class="item-company">| Minimarket Chamical</span></span>
+          <span class="item-date">Feb. 2024 — Presente</span>
+        </div>
+        <ul class="item-bullets">
+          <li>Administración del inventario con más de 200 referencias diarias, reduciendo diferencias de stock en un <strong>40%</strong>.</li>
+          <li>Operación de sistema de punto de venta (POS) y arqueos diarios de caja con <strong>100% de consistencia contable</strong>.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="item-header">
+          <span class="item-title">Prensa, Soporte Técnico &amp; Redes <span class="item-company">| Concejo Deliberante de Chamical</span></span>
+          <span class="item-date">Mar. 2020 — Mar. 2023</span>
+        </div>
+        <ul class="item-bullets">
+          <li>Mantenimiento preventivo y correctivo de más de 20 puestos de trabajo e impresoras; reducción de paradas técnicas en un <strong>80%</strong>.</li>
+          <li>Help Desk a autoridades y personal administrativo, administración de redes locales y resguardo periódico de respaldos.</li>
+          <li>Cobertura institucional de sesiones legislativas y gestión de comunicación digital comunitaria.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="item-header">
+          <span class="item-title">Operador Técnico Sistema SINALIC &amp; Tránsito <span class="item-company">| Municipalidad de Chamical</span></span>
+          <span class="item-date">Dic. 2019 — Mar. 2020</span>
+        </div>
+        <ul class="item-bullets">
+          <li>Emisión y validación de licencias nacionales bajo estándares de seguridad vial con <strong>99% de precisión</strong> documental.</li>
+          <li>Garantía de confidencialidad y estricto apego a protocolos de manejo de datos personales de ciudadanos.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROYECTOS TÉCNICOS DESTACADOS -->
+    <section class="cv-section">
+      <h2 class="section-title">Proyectos Destacados de Software &amp; Soluciones</h2>
+
+      <div class="project-item">
+        <div class="project-row">
+          <span class="project-name">Si.G.A — Sistema Integral de Gestión Veterinaria</span>
+          <span class="project-tags">Java • Spring Boot • React • PostgreSQL • REST API</span>
+        </div>
+        <p class="project-desc">
+          Plataforma para clínicas veterinarias con historias clínicas digitales, control de vacunación y analítica operativa. Arquitectura multicapa con seguridad de roles y base relacional normalizada. (Código disponible en GitHub).
+        </p>
+      </div>
+
+      <div class="project-item">
+        <div class="project-row">
+          <span class="project-name">Marcadores Deportivos Profesionales en Vivo &amp; Suite OBS</span>
+          <span class="project-tags">OBS Studio • WebSockets • Node.js • Inkscape • SVG</span>
+        </div>
+        <p class="project-desc">
+          Overlays interactivos en tiempo real para transmisiones deportivas (fútbol y básquetbol con Shot Clock NBA de 24s). Servidor WebSockets desacoplado que asegura cómputo de tiempo exacto sin desincronización y con consumo &lt;2% de CPU.
+        </p>
+      </div>
+
+      <div class="project-item">
+        <div class="project-row">
+          <span class="project-name">ChamiSistem — ERP &amp; Punto de Venta PYME</span>
+          <span class="project-tags">Java • SQL / MySQL • POS • Facturación • Código de Barras</span>
+        </div>
+        <p class="project-desc">
+          Sistema de escritorio para facturación ágil, inventario en tiempo real, arqueos de caja y cuentas corrientes comerciales, compatible con impresoras térmicas y lectores de barras. (Código disponible en GitHub).
+        </p>
+      </div>
+    </section>
+
+    <!-- EDUCACIÓN FORMAL & CERTIFICACIONES -->
+    <section class="cv-section">
+      <h2 class="section-title">Educación Formal &amp; Certificaciones</h2>
+      <div class="education-grid">
+        <div class="edu-card">
+          <div class="edu-degree">Analista Universitario en Sistemas de Información</div>
+          <div class="edu-institution">Universidad Nacional de La Rioja (UNLaR) — Sede Chamical</div>
+          <div class="edu-year">Graduado — Septiembre 2024 (Licenciatura en curso)</div>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-degree">Perito Informático Forense Oficial</div>
+          <div class="edu-institution">Consejo Profesional de Ciencias Informáticas de La Rioja (CPCIR)</div>
+          <div class="edu-year">Certificación Oficial — 2023 (Habilitación judicial)</div>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-degree">Seguridad Informática &amp; Dispositivos Móviles</div>
+          <div class="edu-institution">Academia ESET Latinoamérica</div>
+          <div class="edu-year">Certificación Oficial</div>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-degree">Mantenimiento de PC, Redes y Reparación Celulares</div>
+          <div class="edu-institution">Instituto Cenedi / Formación Técnica</div>
+          <div class="edu-year">Certificación Técnica</div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>
